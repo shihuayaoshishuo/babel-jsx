@@ -1,4 +1,4 @@
-const srcPath = '/Users/wzk/Desktop/test-project/jsx-test/src/';
+const srcPath = '/Users/wzk/Desktop/test-project/babel-jsx/src/';
 
 /* --------------- 使用react官方的babel插件进行转换 --------------- */
 // const babel = require('@babel/core');
@@ -58,7 +58,8 @@ function coreFunc(path) {
           }
         });
         return path.node.children;
-      }).call(),
+      })(),
+      // ...types.react.buildChildren(path.node)
     ]
   );
   path.replaceWith(callExpression);

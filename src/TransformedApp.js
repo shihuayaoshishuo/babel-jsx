@@ -5,15 +5,15 @@ import './App.css';
 function App() {
   return React.createElement("div", {
     className: 'App'
-  }, "\n      ", React.createElement("header", {
+  }, React.createElement("header", {
     className: 'background'
-  }, "\n        ", React.createElement("img", {
+  }, React.createElement("img", {
     src: logo,
     className: 'logo',
     alt: 'logo'
-  }), "\n        ", React.createElement("p", {
+  }), React.createElement("p", {
     className: 'text'
-  }, "Hello MeiTuan again"), "\n      "), "\n    ");
+  }, "Hello MeiTuan")));
 }
 
 export default App;
